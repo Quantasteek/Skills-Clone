@@ -33,12 +33,6 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
-.{
-  
-  
-  
-  
-}
 
 ul{
   margin: 0;
@@ -58,35 +52,43 @@ nav{
   position: sticky;
   font-family: Inter, sans-serif;
   display: flex;
+  
+  
   flex-wrap: wrap;
   --tw-bg-opacity: 0.2;
   backdrop-filter: blur(12px);
-  margin-left: 9vw;
-  margin-right: 9vw;
-  margin-top: 3vw;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-top: 30px;
+  width: 86%;
   
   background-color: rgb(156 163 175/var(--tw-bg-opacity));
 
   border-radius: 8px;
   align-items: center;
-  min-height: 40px;
-  height: 10vh;
+  min-height: fit-content;
+  height: 80px;
+  overflow: hidden;
+  position: fixed;
+
   /* background-clip: padding-box; */
 }
 
 .nav-text{
-  padding-left: 160px;
+  align-items: center;
+  margin-left: 10rem;
 }
 
 
 
 li{
+  list-style: none;
   display: inline-block;
   cursor: pointer;
   font-size: large;
   font-weight: bold;
   /* padding-left: 55px; */
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 
 
@@ -98,16 +100,201 @@ li{
   width: 120px;
   cursor: pointer;
   border-radius: 0.5rem;
-  margin-left: 10vw;
-  margin-right: ;
+  margin-left: 8vw;
+  
 }
 .register:hover{
   background-color: rgb(197, 160, 232);
 }
 
 .logo{
-margin-left: 3vw;
+margin-left: 7.5vw;
+height: 34.5px;
+
+}
+.sidebar{
+  background-color: rgba(156, 163, 175, 0.2);
+  
+  top: 0;
+  
+  right: 0;
+  height: auto;
+  
+  border-radius: 8px;
+  z-index: 999;
+  /* background-color: white; */
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* background-color: rgba(156 163 175 0.2); */
+  /* background-color: red; */
+  backdrop-filter: blur(10px);
+}
+.sidebar li{
+  width: 100%;
+  list-style: none;
+  margin-top: 15px;
+  
+
+}
+.sidebar a {
+  width: 100%;
+}
+.kid1{
+  
+  /* margin-left: 7vw; */
+} 
+@media(max-width:1200px) {
+  .kid1{
+    /* padding-top: 110px; */
+  }
+  nav{
+    position: fixed;
+  }
+
+  .sidebar :last-child{
+    margin-bottom: 15px;
+  }
+  .logo{
+    margin: 0;
+  }
+  .nav-list{
+    display: none;
+  }
+  .hideOnMobile{
+    display: none;
+  }
+
+   .nav-bar{
+    
+
+    justify-content: space-evenly;
+
+   }
+   .sidebar{
+    
+
+    display: flex;
+    align-self: center;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    width: 86%;
+    position: fixed;
+    margin-top: 110px;
+    
+  }
+  .sidebar-div{
+    display: flex;
+    
+  }
+  .nav-and-side{
+    justify-content: space-evenly;
+  }
+  .kid1{
+    /* margin-left: 7vw; */
+    max-height: 569px;
+    min-height: 309px;
+    
+  }
+  .section1{
+    padding-top: 0px;
+  }
+
+}
+@media (min-width:1200px){
+  .hideOnPC{
+    display: none;
+  }
+  .sidebar-div{
+    display: none;
+    
+  }
+  .kid1{
+    padding-top: 110px;
+  }
+  
+
+  
+}
+@media(max-width:400px){
+  .sidebar{
+    margin-left: 7vw;
+    margin-right: 7vw;
+    
+  }
+ nav{
+  justify-content: space-around;
+  height: 80px;
+  margin-left: 7vw;
+  margin-right: 7vw;
+ }
+}
+.kid1{
+  height: 70vw;
+  max-height: 569px;
+  min-height: 309px;
+
+}
+.section1{
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 86%;
+  margin-left: 7vw;
+  font-family: Inter,  sans-serif;
+  line-height: 1.75rem;
+  justify-content: space-around;
 
 
 }
+#sub-heading{
+  color:#9a8dec;
+  font-size: 35px;
+  display: inline-block;
+  padding-top: 110px;
+}
+.section1 .text{
+ 
+  
+}
+.Boost{
+  max-width: 504px;
+}
+.pulse{
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite;
+  
+}
+.explore{
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: white;
+  color: black;
+  /* height: 40px; */
+  width: 120px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  /* margin-left: 8vw; */
+  
+}
+.explore:hover{
+  background-color: rgb(197, 160, 232);
+}
+.telescope{
+  max-height: 24px;
+}
+.by-Zairza{
+  font-style: italic;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
+}
+.Zairza-Logo{
+  width: 32px;
+  height: 31.2px;
+}
