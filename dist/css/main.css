@@ -149,6 +149,10 @@ height: 34.5px;
   .kid1{
     /* padding-top: 110px; */
   }
+  #sub-heading{
+    display: inline;
+    margin-top: 15px;
+  }
   nav{
     position: fixed;
   }
@@ -197,8 +201,16 @@ height: 34.5px;
     min-height: 309px;
     
   }
+  .section2{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
   .section1{
     padding-top: 0px;
+  }
+  .kid2{
+    margin-bottom: 40px;
   }
 
 }
@@ -210,11 +222,16 @@ height: 34.5px;
     display: none;
     
   }
-  .kid1{
-    padding-top: 110px;
-  }
-  
 
+  
+  #sub-heading{
+    display: inline-block;
+  }
+  .section2{
+    display: flex;
+    flex-direction: row;
+
+  }
   
 }
 @media(max-width:400px){
@@ -246,21 +263,25 @@ height: 34.5px;
   font-family: Inter,  sans-serif;
   line-height: 1.75rem;
   justify-content: space-around;
-
-
 }
 #sub-heading{
   color:#9a8dec;
   font-size: 35px;
-  display: inline-block;
+  /* display: inline-block; */
   padding-top: 110px;
 }
 .section1 .text{
  
   
 }
+.elevate{
+  font-size: large;
+  color: rgb(133, 130, 152);
+}
 .Boost{
   max-width: 504px;
+  font-size: large;
+  color: rgb(133, 130, 152);
 }
 .pulse{
   color: rgb(255, 255, 255);
@@ -297,4 +318,99 @@ height: 34.5px;
 .Zairza-Logo{
   width: 32px;
   height: 31.2px;
+}
+.section2 .text{
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 86%;
+}
+.section2{
+
+  /* flex-wrap: wrap; */
+  margin-left: 7vw;
+  width: 86%;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: flex-end;  
+}
+.features{
+   display: flex;
+  flex-direction: column;
+  
+}
+.section2 .text .body{
+  /* min-width: 492.633px; */
+  max-width: 492.633px;
+  /* max-width: 0.2565vw; */
+
+  /* display: flex; 
+  flex-direction: row; */
+  display: inline-block;
+  color: rgb(133, 130, 152);
+
+}
+.kid2{
+  /* margin-bottom: 70px; */
+  width: 540px;
+  height: 441.017px;
+
+}
+.Process{
+  min-height: 54px;
+}
+@media (max-width: 538px) {
+  .kid2{
+    width: 86vw;
+    height: auto;
+  }
+  
+}
+.discord{
+  display: flex;
+  justify-content: space-around;
+}
+.discord img{
+  display: inline-block;
+
+}
+.discord .get{
+  display: inline-block;
+  margin-left: .75rem;
+
+}
+.text{
+  font-family: Inter;
+
+}
+.mentorship{
+  display: flex;
+  
+}
+.mentorship img{
+  display: inline-block;
+}
+.mentorship .one-on-one{
+  display: inline-block;
+  margin-left: .75rem;
+}
+.badges{
+  display: flex;
+
+}
+.badges img{
+  display: inline-block;
+}
+.badges .Earn{
+  display: inline-block;
+  margin-left: .75rem;
+}
+.whiteBold{
+  color: white;
+  font-weight: bold;
+}
+.section2 .text .heading{
+  color: #9a8dec;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 500;
 }
