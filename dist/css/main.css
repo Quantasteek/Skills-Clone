@@ -79,8 +79,6 @@ nav{
   margin-left: 10rem;
 }
 
-
-
 li{
   list-style: none;
   display: inline-block;
@@ -91,8 +89,7 @@ li{
   margin-left: 1.5rem;
 }
 
-
-.register{
+.nav-bar .register{
   border: none;
   background-color: white;
   color: black;
@@ -103,11 +100,11 @@ li{
   margin-left: 8vw;
   
 }
-.register:hover{
+.nav-bar .register:hover{
   background-color: rgb(197, 160, 232);
 }
 
-.logo{
+.nav-bar .logo{
 margin-left: 7.5vw;
 height: 34.5px;
 
@@ -141,14 +138,9 @@ height: 34.5px;
 .sidebar a {
   width: 100%;
 }
-.kid1{
-  
-  /* margin-left: 7vw; */
-} 
+
 @media(max-width:1200px) {
-  .kid1{
-    /* padding-top: 110px; */
-  }
+
   #sub-heading{
     display: inline;
     margin-top: 15px;
@@ -270,10 +262,7 @@ height: 34.5px;
   /* display: inline-block; */
   padding-top: 110px;
 }
-.section1 .text{
- 
-  
-}
+
 .elevate{
   font-size: large;
   color: rgb(133, 130, 152);
