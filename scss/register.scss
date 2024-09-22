@@ -31,12 +31,215 @@ video {
 $grid-breakpoints: (
   xs: 0,
   sm: 395px,
-  lg: 992px,
+  lg: 910px,
   xxl: 1440px
 );
 
 body {
     background: #000720;
+}
+
+//for tabs
+@media (min-width: map-get($map: $grid-breakpoints, $key: lg)){
+  .nav_par {
+    position: sticky;
+    top: 25px;
+  }
+  
+  .nav_par .navbar {
+      margin-bottom: 3vmax;
+      margin-top: 3vmax;
+      margin-left: 5vw;
+      width: 90vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background: red; //#FFFFFF;
+      font-family: Inter, sans-serif;
+      padding: 1px;
+      height: 75px;
+      background-clip: padding-box;
+      border: 0 solid #e5e7eb;
+      border-radius: 0.5rem;
+      background: transparentize($color: #FFFFFF, $amount: 0.8);
+      backdrop-filter: blur(30px);
+  }
+  
+  .nav_par .navbar .logo {
+      height: 3rem;
+      margin-left: -3vw;       
+  }
+  
+  .reg_btn {
+      padding: 0.5rem 1rem;
+      background-color: #EFF6FF;
+      color: #000000;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 0.7rem;
+      cursor: pointer;
+      text-align: center;
+      font-size: 0.95rem;
+      margin-right: -2.5vw;
+      
+  }
+  
+  .nav_par .navbar {
+      font-size: 2rem;
+      margin-right: -40px;
+      cursor:pointer;
+  }
+  
+  .navbar > .menu, .dropdown-content {
+    display: none;
+  }
+  
+  .navbar > ul {
+    list-style: none;
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 600;
+    gap: 2.5vw;
+  }
+  
+  .navbar > ul > li:hover {
+    background-color: #000000;
+    border-radius: 5px;
+  }
+  .join-img-pc {
+    display: none;
+  }
+  .form-sec .join-img-mob {
+    height: 103px;
+    margin: auto;
+    margin-top: 55px;
+    zoom: 1.3;
+  }
+  .form-sec .log-in {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .form-sec .log-in .reg-al {
+    color: #C3C1CE;
+  }
+  .lady-run {
+    margin: 60px auto;
+  }
+  .form input {
+    margin: auto;
+    background-color: #1A1635;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    height: 50px;
+    margin-top: 12px;
+  }
+  .form input::placeholder {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .form input:focus {
+    border: #EFF6FF 1px solid;
+  }
+  .full-inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .full-inputs input {
+    width: 60vw;
+    margin: 8px auto;
+    display: block;
+  }
+  .half-inputs input {
+    width: 29vw;
+  }
+  .half-inputs .grp-1 {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  select {
+    width: 29vw;
+    background-color: #1A1635;
+    margin-top: 12px;
+    border: none;
+    height: 50px;
+    color: rgb(197, 197, 197);
+    font-size: 1.001rem;
+    font-weight: 300;
+    padding-left: 10px;
+    border-radius: 3px;
+  }
+  .half-inputs .grp-2, .grp-3 {
+    margin: auto;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form .form-text {
+    width: 60vw;
+    margin: 20px auto;
+    color: lightgrey;
+    font-size: 0.95rem;
+  }
+  .form .form-text a {
+    color: darkgray;
+  }
+  .buttons {
+    width: 60vw;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .buttons .back {
+    background: transparent;
+    border: #EFF6FF 2px solid;
+    width: 90px;
+    padding: 2px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+  }
+  .buttons .create {
+    background: #EFF6FF;
+    border: 2px solid;
+    width: 160px;
+    padding: 2px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    color: #000720;
+  }
+  .footer {
+    margin-top: 120px;
+    background-color: #9A8DEC;
+    width: 100vw;
+    height: 150px;
+    padding-top: 30px;
+    display: flex;
+    gap: 40px;
+    padding: 30px;
+  }
+  .foot-logo {
+    zoom: 1;
+    margin: 15px;
+  }
+  .foot-text {
+    width: 500px;
+    margin: 25px -2vw;
+    font-weight: 100;
+  }
+  .foot-links a {
+    color: #e5e7eb;
+  }
+  .foot-links {
+    margin-top: 27px;
+    margin-left: 25vw;
+    width: 300px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 //for pc
@@ -112,20 +315,28 @@ body {
   .join-img-pc {
     height: 103px;
     margin-left: 10vw;
+    display: block;
   }
   .form-sec .log-in {
     margin-left: 10vw;
     margin-top: 40px;
     font-size: 1vw;
+    text-align: left;
   }
   .form-sec .log-in .reg-al {
     color: #C3C1CE;
   }
-  .form-sec .lady-run {
+
+  .lady-run {
+    display: block;
     position: fixed;
-    left: 50vw;
-    top: 10vw;
-    zoom: 1.2;
+    left: 55vw;
+    z-index: -11;
+    top: 15vw;
+  }
+
+  .real {
+    margin-top: 0vw;
   }
 
   .form input {
@@ -187,10 +398,27 @@ body {
     color: darkgray;
   }
   .buttons {
-    width: 200px;
-    margin: 20px 30vw;
+    width: 290px;
+    margin: 28px 24vw;
     display: flex;
     justify-content: space-between;
+  }
+  .buttons .back {
+    background: transparent;
+    border: #EFF6FF 2px solid;
+    width: 90px;
+    padding: 2px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+  }
+  .buttons .create {
+    background: #EFF6FF;
+    border: 2px solid;
+    width: 160px;
+    padding: 2px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    color: #000720;
   }
   .footer {
     margin-top: 120px;
@@ -314,8 +542,12 @@ body {
     .form-sec .log-in .reg-al {
       color: #C3C1CE;
     }
-    .form-sec .lady-run {
-      margin: 15px auto;
+    .lady-run {
+      margin: 50px auto;
+      zoom: 0.8;
+    }
+    .lady {
+      display: none;
     }
     .form input {
       margin: auto;
@@ -385,6 +617,23 @@ body {
       display: flex;
       justify-content: space-between;
     }
+    .buttons .back {
+      background: transparent;
+      border: #EFF6FF 2px solid;
+      width: 90px;
+      padding: 2px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+    }
+    .buttons .create {
+      background: #EFF6FF;
+      border: 2px solid;
+      width: 160px;
+      padding: 2px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      color: #000720;
+    }
     .footer {
       margin-top: 120px;
       background-color: #9A8DEC;
@@ -414,6 +663,3 @@ body {
     }
 }
 
-@media (min-width: map-get($map: $grid-breakpoints, $key: sm)) and (max-width: map-get($map: $grid-breakpoints, $key: lg)) {
-
-}
