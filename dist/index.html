@@ -3,11 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="Group682.svg" />
     <link rel="stylesheet" href="./css/main.css">
-    <title>Skills++ Clone</title>
+    <title>SKILLS++ Clone</title>
 </head>
 <body>
-    <h1>This is a example homepage</h1>
-    <div>Test Div</div>
+    <div class="nav-and-side">
+
+        <nav class="nav-bar">
+            <img class="logo" alt="logo" src="Group682.svg">
+            
+            <ul class="nav-list">
+                <li class="nav-text">
+                    <li class="hideOnMobile"><a>Process</a></li>
+                    <li class="hideOnMobile"><a>Timeline</a></li>
+                    <li class="hideOnMobile"><a>Perks</a></li>
+                    <li class="hideOnMobile"><a>Explore Domains</a></li>
+                    <li class="hideOnMobile"><a>FAQs</a></li>
+                </li>
+            </ul>
+            
+            <button class="register" type="button">
+                Register
+            </button>
+            <li  onclick=showSidebar()><a><img class="hideOnPC" src="hamburgerMenu.svg" alt="menu"></a></li>
+        </nav>
+        <div class="sidebar-div">
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img alt="Close" src="Close.svg"></a></li>
+                <li class="nav-text-sidebar">
+                    <li><a>Process</a></li>
+                    <li><a>Timeline</a></li>
+                    <li><a>Perks</a></li>
+                    <li><a>Explore Domains</a></li>
+                    <li><a>FAQs</a></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section1">
+
+        <img src="kid1.svg" alt="bicycle-kid" class="kid1">
+        <div class="text">
+            <span id="sub-heading">2K24</span>
+            <img alt="skillspp" src="skillspp.svg">
+            <span class="elevate">
+                Elevate Your Expertise
+            </span>
+            <br>
+            <br>
+            
+            <p class="Boost">
+                Boost your skills with guidance in various tech domains. Gain expert knowledge, hands-on experience, personalized mentoring, and earn a certification. Transform your future, <span class="pulse">
+                    REGISTER NOW!!
+                </span>
+            </p>
+            <br>
+            <button class="explore" type="button">
+                Explore Domains<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAYAAABHomvIAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL3SURBVHgB7VfBdeIwEJ2wOewRbhzNbW+Y295QKoAOCBVsUkG8FSRUELuCbCpYU8E6FcS5cVtKyEz0FRRZIdgyvJcX/nvzhDSS5mtmNDJERxxxxOfGCR0YcRx3uTlnGbMoDKdFUVz65n+jA4LJxdz8Y5my/GD5DvnZ7/dPVqtV7q7p0IHA3CJu7ljEg0uWOcuA5QxTJr51BwkxwnrFcsHC0SxGju6RNPEe69b22lPaE2BYQjmTLggIMnueEOK5Bel8FPlD+yJoXYCJQ0qwRr/rWbrcG0GHlPIYFoMpdJKDY882OekUqOga5eCupOx8wpr/pD058Oi8ebizB7eQks0efKRsWLkWQ3KPTpET5tNAUqls9h4pD5Ygp2yClk59SPCD8MkpFzVJ2chZflGNPOw45GSC5Mk1yAkJOZkpDVLD0obkDAmYit3bXMDeG13HIhdxk6B7T7rCSzIra3xKAcDBhIgQiD260tAx43aIzeA9T546i0s+wEsdk4NI39bzmCIdHoWhnGWOdSbnhmgjzLll1RykZGxs6chHsEDry48X4qRfBSF/Y5GT/p0zV7E8mkM5OpMeEcvfqhla8MFy03kNMbzy6iXPQnOAIYh14blrszFLD/IbY0LuiXQOy+fUiO1Ineuh/0CbiiDrz1h3YRt9U6jZYEraS5c80faSGFKkPbWGRNbSkucPnL3ksyqG0Zwawi0zBQjOEB4xYHLDhMq8pzbR3LP3E1Xf49pwvwdT0kkrG9+SrlnGSCVUtPmWm9ppgd9DdEsKQOUtdspNYeS92sfzJdEViCwwLAeTfSoVIZhgXeBAkm++2zpyS1JdtPU9KORK0q+OYIKxiAJD3MZ/kgRtxt46F6FNqK8oEEEEEV659SXpC2YgJUpCrFArGyPUgwnazM41XKhWvNiY4BbvGbTixRAPJmgz301ty4uNCO7gPYNgLzb1YII221bn2vBibYI1vGcQ5MUmHjSfQ9kur4TjxRnVRJOXJCX9SqQ11tw0WHPE18Az0HY96uoaiAsAAAAASUVORK5CYII=" alt="telescope" class="telescope">
+            </button>
+            <br>
+            <div class="by-Zairza">
+                -by ZAIRZA &nbsp; <img class="Zairza-Logo" src="Zairza-Logo.png" alt="Zairza-Logo">
+            </div>
+            <!-- <img alt="register" src="Register.svg"> -->
+        </div>
+    </div>
+    <div class="section2">
+        <div class="text">
+            
+            <div class="heading">
+                What is Skills++?
+            </div>
+            <img src="Process.svg" alt="Process" class="Process">
+            <br>
+            <br>
+
+            
+                <div class="features">
+                    <div class="body">
+
+                    <span class="discord">
+                        <img src="discord.svg" alt="discord">
+                        <span class="get">
+                    Get
+                     <span class="whiteBold">
+                        registered 
+                    </span>
+                    and join your respective domain 
+                    <span class="whiteBold">
+                        discord 
+                    </span>
+                    
+                    channel mentioned after registration
+                    </span>
+    
+                
+                </span>
+                <br>
+            <div class="mentorship">
+                <img src="message.svg" alt="message">
+                <div class="one-on-one">
+                    Get one on one 
+                    <span class="whiteBold">
+                        mentorship 
+                    </span>
+                    from your members along with 
+                    <span class="whiteBold">
+                        assignments 
+                    </span>
+                    on start of each week</div>
+                </div>
+                <br>
+                <div class="badges">
+                    <img src="trophy.svg" alt="trophy">
+                    <div class="Earn">
+                        Earn 
+                        <span class="whiteBold">
+                            badges
+                        </span>
+                        on successful submission of assignments of 4 weeks and a 
+                        <span class="whiteBold">
+                            certificate 
+                        </span>at the end of 4th week
+                    </div>
+                </div>
+            </div>
+
+            <!-- <img src="Chilly1.svg" alt="kid2" class="kid2"> -->
+        </div>
+        
+    </div>
+    <img src="Chilly1.svg" alt="kid2" class="kid2">
+    </div>
 </body>
+    <script>
+        function showSidebar(){
+            const sidebar =document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
 </html>

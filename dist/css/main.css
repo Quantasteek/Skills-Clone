@@ -1,4 +1,4 @@
-/* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *,
 *::before,
 *::after {
@@ -19,20 +19,387 @@ body {
   min-height: 100vh;
 }
 
+
 img,
 picture,
 svg,
 video {
   display: block;
-  max-width: 100%;
+  
 }
-
 body {
-  background-color: blue;
+  background-color: #000720;
+
 }
 
-div {
-  color: aqua;
-  background-color: beige;
-  width: 390px;
-}/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+a{
+  height: 10px;
+  
+}
+a:hover{
+  background-color: black;
+  border-radius: 2px;
+  transition: all;
+}
+
+nav{
+  position: sticky;
+  font-family: Inter, sans-serif;
+  display: flex;
+  
+  
+  flex-wrap: wrap;
+  --tw-bg-opacity: 0.2;
+  backdrop-filter: blur(12px);
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-top: 30px;
+  width: 86%;
+  
+  background-color: rgb(156 163 175/var(--tw-bg-opacity));
+
+  border-radius: 8px;
+  align-items: center;
+  min-height: fit-content;
+  height: 80px;
+  overflow: hidden;
+  position: fixed;
+
+  /* background-clip: padding-box; */
+}
+
+.nav-text{
+  align-items: center;
+  margin-left: 10rem;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  /* padding-left: 55px; */
+  margin-left: 1.5rem;
+}
+
+.nav-bar .register{
+  border: none;
+  background-color: white;
+  color: black;
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-left: 8vw;
+  
+}
+.nav-bar .register:hover{
+  background-color: rgb(197, 160, 232);
+}
+
+.nav-bar .logo{
+margin-left: 7.5vw;
+height: 34.5px;
+
+}
+.sidebar{
+  background-color: rgba(156, 163, 175, 0.2);
+  
+  top: 0;
+  
+  right: 0;
+  height: auto;
+  
+  border-radius: 8px;
+  z-index: 999;
+  /* background-color: white; */
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* background-color: rgba(156 163 175 0.2); */
+  /* background-color: red; */
+  backdrop-filter: blur(10px);
+}
+.sidebar li{
+  width: 100%;
+  list-style: none;
+  margin-top: 15px;
+  
+
+}
+.sidebar a {
+  width: 100%;
+}
+
+@media(max-width:1200px) {
+
+  #sub-heading{
+    display: inline;
+    margin-top: 15px;
+  }
+  nav{
+    position: fixed;
+  }
+
+  .sidebar :last-child{
+    margin-bottom: 15px;
+  }
+  .logo{
+    margin: 0;
+  }
+  .nav-list{
+    display: none;
+  }
+  .hideOnMobile{
+    display: none;
+  }
+
+   .nav-bar{
+    
+
+    justify-content: space-evenly;
+
+   }
+   .sidebar{
+    
+
+    display: flex;
+    align-self: center;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    width: 86%;
+    position: fixed;
+    margin-top: 110px;
+    
+  }
+  .sidebar-div{
+    display: flex;
+    
+  }
+  .nav-and-side{
+    justify-content: space-evenly;
+  }
+  .kid1{
+    /* margin-left: 7vw; */
+    max-height: 569px;
+    min-height: 309px;
+    
+  }
+  .section2{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .section1{
+    padding-top: 0px;
+  }
+  .kid2{
+    margin-bottom: 40px;
+  }
+
+}
+@media (min-width:1200px){
+  .hideOnPC{
+    display: none;
+  }
+  .sidebar-div{
+    display: none;
+    
+  }
+
+  
+  #sub-heading{
+    display: inline-block;
+  }
+  .section2{
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+}
+@media(max-width:400px){
+  .sidebar{
+    margin-left: 7vw;
+    margin-right: 7vw;
+    
+  }
+ nav{
+  justify-content: space-around;
+  height: 80px;
+  margin-left: 7vw;
+  margin-right: 7vw;
+ }
+}
+.kid1{
+  height: 70vw;
+  max-height: 569px;
+  min-height: 309px;
+
+}
+.section1{
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 86%;
+  margin-left: 7vw;
+  font-family: Inter,  sans-serif;
+  line-height: 1.75rem;
+  justify-content: space-around;
+}
+#sub-heading{
+  color:#9a8dec;
+  font-size: 35px;
+  /* display: inline-block; */
+  padding-top: 110px;
+}
+
+.elevate{
+  font-size: large;
+  color: rgb(133, 130, 152);
+}
+.Boost{
+  max-width: 504px;
+  font-size: large;
+  color: rgb(133, 130, 152);
+}
+.pulse{
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite;
+  
+}
+.explore{
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: white;
+  color: black;
+  /* height: 40px; */
+  width: 120px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  /* margin-left: 8vw; */
+  
+}
+.explore:hover{
+  background-color: rgb(197, 160, 232);
+}
+.telescope{
+  max-height: 24px;
+}
+.by-Zairza{
+  font-style: italic;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.Zairza-Logo{
+  width: 32px;
+  height: 31.2px;
+}
+.section2 .text{
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 86%;
+}
+.section2{
+
+  /* flex-wrap: wrap; */
+  margin-left: 7vw;
+  width: 86%;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: flex-end;  
+}
+.features{
+   display: flex;
+  flex-direction: column;
+  
+}
+.section2 .text .body{
+  /* min-width: 492.633px; */
+  max-width: 492.633px;
+  /* max-width: 0.2565vw; */
+
+  /* display: flex; 
+  flex-direction: row; */
+  display: inline-block;
+  color: rgb(133, 130, 152);
+
+}
+.kid2{
+  /* margin-bottom: 70px; */
+  width: 540px;
+  height: 441.017px;
+
+}
+.Process{
+  min-height: 54px;
+}
+@media (max-width: 538px) {
+  .kid2{
+    width: 86vw;
+    height: auto;
+  }
+  
+}
+.discord{
+  display: flex;
+  justify-content: space-around;
+}
+.discord img{
+  display: inline-block;
+
+}
+.discord .get{
+  display: inline-block;
+  margin-left: .75rem;
+
+}
+.text{
+  font-family: Inter;
+
+}
+.mentorship{
+  display: flex;
+  
+}
+.mentorship img{
+  display: inline-block;
+}
+.mentorship .one-on-one{
+  display: inline-block;
+  margin-left: .75rem;
+}
+.badges{
+  display: flex;
+
+}
+.badges img{
+  display: inline-block;
+}
+.badges .Earn{
+  display: inline-block;
+  margin-left: .75rem;
+}
+.whiteBold{
+  color: white;
+  font-weight: bold;
+}
+.section2 .text .heading{
+  color: #9a8dec;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 500;
+}
