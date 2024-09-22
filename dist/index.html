@@ -3,11 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
     <title>Skills++ Clone</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/2af254fe4c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>This is a example homepage</h1>
-    <div>Test Div</div>
+    <header>
+        <nav id="navbar">
+            <img src="img/navbar-skills++.svg" alt="skills++">
+            <div id="register">
+                <button id="register-button">Register</button>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <div id="square"></div>
+    <div id="circle"></div>
+    <div id="homepage">
+        <div id="schedule">
+            <div id="schedule-heading">
+                <h4>Event Schedule</h3>
+                <h1>TIMELINE</h1>
+            </div>
+            <div id="schedule-timings">
+                <div class="schedule-dates">
+                    <p class="week">Week 0:</p>
+                    <p>22nd July - 28th July</p>
+                </div>
+                <div class="schedule-dates">
+                    <p class="week">Week 1:</p>
+                    <p>29nd July - 4th July</p>
+                </div>
+                <div class="schedule-dates">
+                    <p class="week">Week 2:</p>
+                    <p>5th July - 11th July</p>
+                </div>
+                <div class="schedule-dates">
+                    <p class="week">Week 3:</p>
+                    <p>12th July - 18th July</p>
+                </div>
+            </div>
+        </div>
+        <div id="perks">
+            <div id="perks-main">
+                <div id="perks-heading">
+                    <h4>Badges and Certificate</h4>
+                    <h1>PERKS</h1>
+                </div>
+                <p>Level up and earn a new badge each week, and collect all four to receive a certificate of completion after your fourth successful submission, marking your mastery of the program.</p>
+            </div>
+            <div id="image-section">
+                <img src="/img/kiddo-frame.svg" alt="kiddo-frame">
+                <img src="/img/rogue-frame.svg" alt="kiddo-frame">
+                <img src="/img/pilot-frame.svg" alt="kiddo-frame">
+                <img src="/img/astro-frame.svg" alt="kiddo-frame">
+            </div>
+        </div>
+        <div id="domains">
+            <div id="domains-heading">
+                <h4>Uncover the Dimensions</h4>
+                <h1>Explore Domains</h1>
+            </div>
+            <div id="domains-folders">
+                <div id="folder-nav">
+                    <h4>Navigate the Future</h4>
+                    <div class="dropdown">
+                        <button id="folder-dropdown">
+                            <p>All domains</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu"><button>All domains</button>
+                        <button>Software domains</button>
+                        <button>Hardware domains</button>
+                        <button>Design domains</button></div>
+                    </div>
+                </div>
+                <div id="folder-container">
+                    <div class="folder">
+                        <img src="img/folders/software-folder.svg" alt="web-dev-folder">
+                        <p>Web Dev - Frontend & Backend</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/designing-folder.svg" alt="ui-ux-folder">
+                        <p>UI / UX</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/software-folder.svg" alt="app-dev-folder">
+                        <p>App Dev</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/hardware-folder.svg" alt="iot-folder">
+                        <p>Internet of Things</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/software-folder.svg" alt="cp-folder">
+                        <p>Competitive Programming</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/hardware-folder.svg" alt="ros-folder">
+                        <p>Robot Operating System</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/software-folder.svg" alt="ai-ml-folder">
+                        <p>AI / ML</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/hardware-folder.svg" alt="microcontroller-folder">
+                        <p>Microcontroller and Embedded Systems</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/software-folder.svg" alt="blockchain">
+                        <p>Blockchain</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/designing-folder.svg" alt="video-editing">
+                        <p>Video Editing</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/software-folder.svg" alt="devops-folder">
+                        <p>DevOps</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/designing-folder.svg" alt="graphic-designing">
+                        <p>Graphic Designing</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/software-folder.svg" alt="backend-folder">
+                        <p>Backend</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/software-folder.svg" alt="game-dev-folder">
+                        <p>Game-Dev</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/software-folder.svg" alt="hacking-folder">
+                        <p>Ethical Hacking & Cyber Security</p>
+                    </div>
+                    <div class="folder">
+                        <img src="img/folders/software-folder.svg" alt="cloud-folder">
+                        <p>Cloud Computing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="faqs">
+            <h1>FAQS</h1>
+            <div id="faqs-container">
+                <div class="faqs-question">
+                    <p>Is Skills++ 2024 free?</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faqs-question">
+                    <p>What is the drive link that I have to submit on the registration page?</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faqs-question">
+                    <p>How can I share or download the badges or certificates?</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faqs-question">
+                    <p>Where can I ask my doubts?</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faqs-question">
+                    <p>What will I gain from Skills++?</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <p>
+                Can't find what you're looking for? <a href="https://www.zairza.co.in/">Visit Zairza</a>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-main">
+            <img src="img/skills++.svg" alt="skills++">
+            <p>A event organized by Zairza for the welfare of budding talented software engineers, hardware engineers and designers.</p>
+        </div>
+        <div id="footer-links">
+            <a href="https://www.youtube.com/@zairzarobosofdescluboutrb1825">YouTube</a>
+            <a href="https://www.instagram.com/zairza.outr/">Instagram</a>
+            <a href="https://in.linkedin.com/company/zairza">LinedIn</a>
+        </div>
+    </footer>
 </body>
 </html>
