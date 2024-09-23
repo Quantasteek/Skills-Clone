@@ -383,7 +383,7 @@ header {
 }
 
 footer {
-  height: 310px;
+  height: 275px;
   padding: 25px 20px 45px;
   color: #c8cddc;
   background-color: #9a8dec;
@@ -392,7 +392,14 @@ footer {
   justify-content: space-around;
 }
 
+#footer-main {
+  display: flex;
+  flex-direction: column;
+}
+
 #footer-main > img {
+  height: 44px;
+  width: 44px;
   margin-bottom: 16px;
 }
 
@@ -438,5 +445,32 @@ footer {
   #faqs > h1 {
     font-size: 56px;
     line-height: 64px;
+  }
+}
+@media (min-width: 734px) {
+  footer {
+    height: 200px;
+  }
+  #footer-main {
+    flex-direction: row;
+    align-items: center;
+  }
+  #footer-main > p {
+    width: min(100vw, 900px);
+    margin-left: 16px;
+  }
+  #footer-main > img {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1240px) {
+  footer {
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer-main > p {
+    width: min(100vw, 700px);
   }
 }/*# sourceMappingURL=homepage_lower.css.map */

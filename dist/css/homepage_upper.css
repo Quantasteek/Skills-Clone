@@ -37,10 +37,16 @@ ul {
 }
 
 a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.sidebar a {
   height: 10px;
 }
 
-a:hover {
+.sidebar a:hover {
   padding: 4px 0px;
   background-color: black;
   border-radius: 4px;
