@@ -47,18 +47,24 @@ a:hover {
   transition: all;
 }
 
+.nav-and-side {
+  display: flex;
+  justify-content: center;
+}
+
 nav {
   position: sticky;
   top: 25px;
   font-family: Inter, sans-serif;
   display: flex;
   justify-content: space-around;
+  z-index: 1;
 
   flex-wrap: wrap;
   --tw-bg-opacity: 0.2;
   backdrop-filter: blur(12px);
-  margin-left: 7vw;
-  margin-right: 7vw;
+  // margin-left: 7vw;
+  // margin-right: 7vw;
   margin-top: 30px;
   width: 86%;
 
@@ -142,6 +148,11 @@ li {
   width: 100%;
   list-style: none;
   margin-top: 15px;
+}
+
+.hideOnPC {
+  height: 32px;
+  width: 32px;
 }
 
 .sidebar a {
@@ -315,6 +326,7 @@ li {
   margin-left: 7vw;
   width: 86%;
   margin-top: 100px;
+  margin-bottom: 100px;
   align-items: center;
   justify-content: flex-end;
 }
