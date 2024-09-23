@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Moon Walk";
-  src: url("/dist/fonts/Moon Walk.ttf") format("truetype");
+  src: url("/dist/fonts/Moon-Walk.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,22 +16,6 @@ body {
   color: #fff;
   line-height: 1.6;
   margin-top: 90px;
-}
-
-header {
-  background-color: rgba(42, 51, 83, 0.603);
-  padding: 12px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 40px;
-  left: 120px;
-  right: 120px;
-  z-index: 1000;
-  border-radius: 11.5px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar {

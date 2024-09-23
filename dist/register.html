@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/homepage_upper.css">
+    <link rel="stylesheet" href="css/homepage_lower.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Document</title>
 </head>
 
 <body>
     <!--Navbar-->
-    <nav class="nav_par">
+    <!-- <nav class="nav_par">
         <div class="navbar">
             <img src="/images/s++.png" alt="" class="logo">
             <ul class="side-menu">
@@ -31,7 +33,39 @@
             <a href="#">Explore Domains</a>
             <a href="#">FAQs</a>
         </div>
-    </nav>
+    </nav> -->
+    <header>
+        <nav class="nav-bar">
+          <img class="logo" alt="logo" src="img/Group682.svg" />
+          <ul class="nav-list">
+            <li class="nav-text"></li>
+            <li class="hideOnMobile"><a href="#">Process</a></li>
+            <li class="hideOnMobile"><a href="#">Timeline</a></li>
+            <li class="hideOnMobile"><a href="#">Perks</a></li>
+            <li class="hideOnMobile"><a href="#">Explore Domains</a></li>
+            <li class="hideOnMobile"><a href="#">FAQs</a></li>
+          </ul>
+  
+          <button class="register" type="button"><a href="register.html">Register</a></button>
+          <li onclick="showSidebar()">
+            <a><img class="hideOnPC" src="img/hamburgerMenu.svg" alt="menu" /></a>
+          </li>
+        </nav>
+        <div class="sidebar-div">
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#"><img alt="Close" src="img/Close.svg" /></a>
+            </li>
+            <li class="nav-text-sidebar"></li>
+            <li class="showOnMobile"><a href="#">Process</a></li>
+            <li class="showOnMobile"><a href="#">Timeline</a></li>
+            <li class="showOnMobile"><a href="#">Perks</a></li>
+            <li class="showOnMobile"><a href="#">Explore Domains</a></li>
+            <li class="showOnMobile"><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+      </header>
     <!--Form-heads-->
     <div class="form-sec">
         <img src="/images/sprint.jpg" alt="" class="join-img-mob">
@@ -147,7 +181,7 @@
         </div>
     </div>
     </form>
-    <div class="footer">
+    <!-- <div class="footer">
         <img src="/images/logo_2.jpg" alt="" class="foot-logo">
         <div class="foot-text">
             A event organised by Zairza for the welfare of budding talented software engineers, hardware engineers and designers
@@ -157,16 +191,32 @@
             <li><a href="">Instagram</a></li>
             <li><a href="">linkedin</a></li>
         </ul>
-    </div>
+    </div> -->
+    <footer>
+        <div id="footer-main">
+          <img src="img/skills++.svg" alt="skills++" />
+          <p>
+            A event organized by Zairza for the welfare of budding talented
+            software engineers, hardware engineers and designers.
+          </p>
+        </div>
+        <div id="footer-links">
+          <a href="https://www.youtube.com/@zairzarobosofdescluboutrb1825"
+            >YouTube</a
+          >
+          <a href="https://www.instagram.com/zairza.outr/">Instagram</a>
+          <a href="https://in.linkedin.com/company/zairza">LinedIn</a>
+        </div>
+      </footer>
     <script>
-        function toggle() {
-  var x = document.getElementsByClassName("dropdown-content");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+        function showSidebar() {
+      const sidebar = document.querySelector(".sidebar");
+      sidebar.style.display = "flex";
+    }
+    function hideSidebar() {
+      const sidebar = document.querySelector(".sidebar");
+      sidebar.style.display = "none";
+    }
     </script>
 </body>
 

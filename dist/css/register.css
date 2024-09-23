@@ -43,6 +43,11 @@ body {
   justify-content: space-evenly;
 }
 
+.log-in > a {
+  color: darkblue;
+  text-decoration: underline;
+}
+
 @media (min-width: 910px) {
   .nav_par {
     position: sticky;
@@ -104,6 +109,9 @@ body {
   }
   .join-img-pc {
     display: none;
+  }
+  .form-sec {
+    margin-top: 30vh;
   }
   .form-sec .join-img-mob {
     height: 103px;
@@ -517,6 +525,9 @@ body {
   }
   .menu:hover .dropdown-content {
     display: block;
+  }
+  .form-sec {
+    margin-top: 20vh;
   }
   .join-img-pc {
     display: none;

@@ -49,7 +49,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
 
+.log-in > a {
+  color: darkblue;
+  text-decoration: underline;
 }
 
 //for tabs
@@ -121,6 +125,9 @@ body {
   }
   .join-img-pc {
     display: none;
+  }
+  .form-sec {
+    margin-top: 30vh;
   }
   .form-sec .join-img-mob {
     height: 103px;
@@ -539,6 +546,9 @@ body {
     }
     .menu:hover .dropdown-content {
       display: block;
+    }
+    .form-sec {
+      margin-top: 20vh;
     }
     .join-img-pc {
       display: none;
