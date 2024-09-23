@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@font-face {
+  font-family: "BROTHER";
+  font-style: normal;
+  src: url("../dist/fonts/BROTHER-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Moon-Walk";
+  font-style: normal;
+  src: url("../dist/fonts/Moon-Walk.otf") format("opentype");
+}
+
+/* CSS Reset */
 *,
 *::before,
 *::after {
@@ -8,7 +22,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -24,369 +38,430 @@ picture,
 svg,
 video {
   display: block;
+  max-width: 100%;
 }
+
+// Main CSS
+$background-color: #000720;
+$primary-text-color: #9a8dec;
+$secondary-text-color: #1b1b1b;
+$grey-text-color: #c3c1ce;
+$more-grey-text-color: #4b5563;
+$folders-nav-color: #362d6d;
+$folders-container-color: #1a1635;
+$folder-dropdown-stroke-color: #dad8ea;
+
+$grid-breakpoints: (
+  sm: 640px,
+  lg: 992px,
+  xxl: 1440px,
+);
+
 body {
-  background-color: #000720;
+  background-color: $background-color;
 }
 
-/*# sourceMappingURL=main.css.map */
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  height: 10px;
-}
-
-a:hover {
-  padding: 4px 0px;
-  background-color: black;
-  border-radius: 4px;
-  transition: all;
-}
-
-nav {
+header {
   position: sticky;
-  top: 25px;
-  font-family: Inter, sans-serif;
+  top: 10px;
+  z-index: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
 
-  flex-wrap: wrap;
-  --tw-bg-opacity: 0.2;
-  backdrop-filter: blur(12px);
-  margin-left: 7vw;
-  margin-right: 7vw;
-  margin-top: 30px;
-  width: 86%;
-
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-
+#navbar {
+  height: 56px;
+  width: 100vw;
+  margin: 15px;
+  padding: 12px;
   border-radius: 8px;
-  align-items: center;
-  min-height: fit-content;
-  height: 80px;
-  overflow: hidden;
-  position: fixed;
-
-  /* background-clip: padding-box; */
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(15px);
+  filter: drop-shadow(0 4px 4px rgba(255, 255, 255, 0.2));
 }
 
-.nav-text {
-  align-items: center;
-  // margin-left: 10rem;
-}
-
-.hideOnMobile > a {
-  color: white;
-  text-decoration: none;
-}
-
-.showOnMobile > a {
-  color: white;
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-  display: inline-block;
-  cursor: pointer;
-  font-size: large;
-  font-weight: bold;
-  /* padding-left: 55px; */
-  margin-left: 1.5rem;
-}
-
-.nav-bar .register {
-  border: none;
-  font-weight: 600;
-  background-color: white;
-  color: black;
-  height: 40px;
+#register {
   width: 120px;
-  cursor: pointer;
-  border-radius: 0.5rem;
-  // margin-left: 8vw;
-}
-.nav-bar .register:hover {
-  background-color: rgb(197, 160, 232);
-}
-
-.nav-bar .logo {
-  // margin-left: 7.5vw;
-  height: 34.5px;
-}
-.sidebar {
-  background-color: rgba(156, 163, 175, 0.2);
-
-  position: fixed;
-  top: 25px;
-  right: 0;
-  height: auto;
-
-  border-radius: 8px;
-  z-index: 999;
-  /* background-color: white; */
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  /* background-color: rgba(156 163 175 0.2); */
-  /* background-color: red; */
-  backdrop-filter: blur(10px);
-}
-
-.sidebar li {
-  width: 100%;
-  list-style: none;
-  margin-top: 15px;
-}
-
-.sidebar a {
-  width: 100%;
-}
-
-@media (max-width: 1200px) {
-  #sub-heading {
-    display: inline;
-    margin-top: 15px;
-  }
-  nav {
-    position: fixed;
-  }
-
-  .sidebar :last-child {
-    margin-bottom: 15px;
-  }
-  .logo {
-    margin: 0;
-  }
-  .nav-list {
-    display: none;
-  }
-
-  .hideOnMobile {
-    display: none;
-  }
-
-  .nav-bar {
-    justify-content: space-evenly;
-  }
-  
-  .sidebar {
-    display: flex;
-    align-self: center;
-    margin-left: 7vw;
-    margin-right: 7vw;
-    width: 86%;
-    position: fixed;
-    margin-top: 110px;
-  }
-  
-  .sidebar-div {
-    display: flex;
-  }
-  .nav-and-side {
-    justify-content: space-evenly;
-  }
-  .kid1 {
-    /* margin-left: 7vw; */
-    max-height: 569px;
-    min-height: 309px;
-  }
-  .section2 {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-  .section1 {
-    padding-top: 0px;
-  }
-  .kid2 {
-    margin-bottom: 40px;
-  }
-}
-@media (min-width: 1200px) {
-  .hideOnPC {
-    position: absolute;
-    display: none;
-  }
-
-  .sidebar-div {
-    display: none;
-  }
-
-  #sub-heading {
-    display: inline-block;
-  }
-  .section2 {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (max-width: 400px) {
-  .sidebar {
-    margin-left: 7vw;
-    margin-right: 7vw;
-  }
-  nav {
-    justify-content: space-around;
-    height: 80px;
-    margin-left: 7vw;
-    margin-right: 7vw;
-  }
-}
-.kid1 {
-  height: 70vw;
-  max-height: 569px;
-  min-height: 309px;
-}
-.section1 {
-  margin-top: 128px;
-  height: fit-content;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 86%;
-  margin-left: 7vw;
-  font-family: Inter, sans-serif;
-  line-height: 1.75rem;
-  justify-content: space-around;
-}
-#sub-heading {
-  color: #9a8dec;
-  font-size: 35px;
-  /* display: inline-block; */
-  padding-top: 110px;
-}
-
-.elevate {
-  font-size: large;
-  color: rgb(133, 130, 152);
-}
-.Boost {
-  max-width: 504px;
-  font-size: large;
-  color: rgb(133, 130, 152);
-}
-.pulse {
-  color: rgb(255, 255, 255);
-  font-weight: 700;
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-.explore {
-  padding: .25rem .5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: none;
+}
+
+#register > i {
+  padding: 6px;
+  font-size: 18px;
+}
+
+#register-button {
+  height: 36px;
+  width: 76px;
+  color: $folders-container-color;
   background-color: white;
-  color: black;
-  width: 150px;
-  cursor: pointer;
-  border-radius: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+
+#register-button:hover {
+  background-color: $grey-text-color;
+}
+
+#square {
+  height: 140px;
+  width: 140px;
+  background-color: $primary-text-color;
+  border-radius: 32px;
+  position: absolute;
+  top: -55px;
+  right: -35px;
+  rotate: -30deg;
+}
+
+#circle {
+  height: 50px;
+  width: 50px;
+  background-color: $primary-text-color;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  right: 125px;
+}
+
+#homepage > div {
+  margin: 64px 0px;
+}
+
+#schedule {
+  padding: 48px 0px 48px 0px;
+  background-color: $primary-text-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#schedule-heading > h4 {
+  color: $secondary-text-color;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+#schedule-heading > h1 {
+  font-size: 48px;
+  line-height: 42px;
+  font-family: "Moon Walk";
+  text-align: center;
+}
+
+#schedule-timings {
+  color: $secondary-text-color;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 1rem;
+  line-height: 1.25rem;
   font-weight: 600;
 }
 
-.explore:hover {
-  background-color: rgb(197, 160, 232);
+#schedule-week {
+  margin-top: 8px;
+  margin-right: 16px;
 }
 
-.telescope {
-  font-size: 32px;
-  max-height: 24px;
-}
-.by-Zairza {
-  font-style: italic;
+.schedule-dates {
+  margin-top: 8px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
 }
-.Zairza-Logo {
-  width: 32px;
-  height: 31.2px;
+
+.schedule-dates > .week {
+  margin-right: 16px;
 }
-.section2 .text {
-  width: 86%;
-}
-.section2 {
-  margin-left: 7vw;
-  width: 86%;
-  margin-top: 100px;
-  align-items: center;
-  justify-content: flex-end;
-}
-.features {
+
+#perks {
+  padding: 0px 20px 0px 20px;
   display: flex;
   flex-direction: column;
-}
-.section2 .text .body {
-  /* min-width: 492.633px; */
-  max-width: 492.633px;
-  /* max-width: 0.2565vw; */
-
-  /* display: flex; 
-  flex-direction: row; */
-  display: inline-block;
-  color: rgb(133, 130, 152);
-}
-.kid2 {
-  /* margin-bottom: 70px; */
-  width: 540px;
-  height: 441.017px;
-}
-.Process {
-  min-height: 54px;
-}
-@media (max-width: 538px) {
-  .kid2 {
-    width: 86vw;
-    height: auto;
-  }
-}
-.discord {
-  display: flex;
+  align-items: center;
   justify-content: space-around;
 }
-.discord img {
-  display: inline-block;
-}
-.discord .get {
-  display: inline-block;
-  margin-left: 0.75rem;
-}
-.text {
-  font-family: Inter;
-}
-.mentorship {
+
+#perks-main {
+  margin-bottom: 32px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-.mentorship img {
-  display: inline-block;
+
+#perks-main > p {
+  width: min(100%, 464px);
+  margin-top: 16px;
+  color: $grey-text-color;
+  text-align: center;
+  font-family: "Inter", sans-serif;
 }
-.mentorship .one-on-one {
-  display: inline-block;
-  margin-left: 0.75rem;
-}
-.badges {
+
+#perks-heading {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.badges img {
-  display: inline-block;
+
+#perks-heading > h4 {
+  color: $primary-text-color;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
 }
-.badges .Earn {
-  display: inline-block;
-  margin-left: 0.75rem;
+
+#perks-heading > h1 {
+  font-size: 48px;
+  line-height: 42px;
+  font-family: "Moon Walk";
+  text-align: center;
 }
-.whiteBold {
+
+#image-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#image-section > img {
+  margin-bottom: 32px;
+}
+
+#domains {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+#domains-heading {
+  margin-bottom: 48px;
+}
+
+#domains-heading > h4 {
+  color: $primary-text-color;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+#domains-heading > h1 {
+  font-size: 48px;
+  line-height: 42px;
+  font-family: "Moon Walk";
+  text-align: center;
+}
+
+#domains-folders {
+  background-color: $folders-container-color;
+  border-radius: 16px;
+}
+
+#folder-nav {
+  height: 86px;
+  padding: 24px 32px;
+  background-color: $folders-nav-color;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.25rem);
+  background-color: $folders-nav-color;
+  padding: 0.25rem 0.25rem;
+  border: 2px solid $background-color;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(1, 1, 1, 0.1);
+  font-size: 15px;
+  opacity: 0;
+}
+
+.dropdown-menu > button {
+  padding: 0.5rem;
+  width: 100%;
+  text-align: start;
+  background-color: $folders-nav-color;
+  border: none;
+  border-radius: 4px;
+}
+
+.dropdown-menu > button:hover {
+  background-color: $folders-container-color;
+}
+
+.dropdown > button:focus + .dropdown-menu {
+  opacity: 1;
+}
+
+#folder-dropdown {
+  height: 38px;
+  width: 160px;
+  background-color: $folders-nav-color;
+  padding: 10px 16px;
+  display: flex;
+  border: 1px solid $folder-dropdown-stroke-color;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#folder-dropdown:hover {
+  background-color: $folders-container-color;
+}
+
+#folder-container {
+  padding: 48px 0px;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.folder {
+  width: 120px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.folder > p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: $grey-text-color;
+  text-align: center;
+}
+
+#faqs {
+  margin: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#faqs > h1 {
+  font-size: 48px;
+  line-height: 42px;
+  font-family: "Moon Walk";
+  margin-bottom: 8px;
+}
+
+#faqs-container {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqs-question {
+  width: 90%;
+  margin-bottom: 16px;
+  padding: 48px 24px;
+  display: flex;
+  border: 1px solid $folder-dropdown-stroke-color;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+#faqs > p {
+  color: $more-grey-text-color;
+}
+
+#faqs > p > a {
+  color: $primary-text-color;
+}
+
+footer {
+  height: 310px;
+  padding: 25px 20px 45px;
+  color: #c8cddc;
+  background-color: $primary-text-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#footer-main > img {
+  margin-bottom: 16px;
+}
+
+#footer-main > p {
+  text-align: justify;
+}
+
+#footer-links > a {
+  margin-right: 8px;
   color: white;
   font-weight: bold;
 }
-.section2 .text .heading {
-  color: #9a8dec;
-  font-size: 35px;
-  line-height: 50px;
-  font-weight: 500;
+
+@media (min-width: 640px) {
+  #schedule-heading > h4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  #schedule-heading > h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  #schedule-timings {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  #perks-heading > h4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  #perks-heading > h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  #domains-heading > h4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  
+  #domains-heading > h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  #faqs > h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
 }
