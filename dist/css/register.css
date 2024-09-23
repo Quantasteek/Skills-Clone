@@ -31,6 +31,18 @@ body {
   background: #000720;
 }
 
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.create {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 @media (min-width: 910px) {
   .nav_par {
     position: sticky;
@@ -310,7 +322,7 @@ body {
     position: fixed;
     left: 55vw;
     z-index: -11;
-    top: 15vw;
+    top: 7vw;
   }
   .real {
     margin-top: 0vw;
