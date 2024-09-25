@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@font-face {
+  font-family: "BROTHER";
+  font-style: normal;
+  src: url("../dist/fonts/BROTHER-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Moon-Walk";
+  font-style: normal;
+  src: url("../dist/fonts/Moon-Walk.otf") format("opentype");
+}
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: #000720;
+}
+
+header {
+  position: sticky;
+  top: 10px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar {
+  height: 56px;
+  width: 100vw;
+  margin: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  filter: drop-shadow(0 4px 4px rgba(255, 255, 255, 0.2));
+}
+
+#register {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#register > i {
+  padding: 6px;
+  font-size: 18px;
+}
+
+#register-button {
+  height: 36px;
+  width: 76px;
+  color: #1a1635;
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+
+#register-button:hover {
+  background-color: #c3c1ce;
+}
+
+#square {
+  height: 140px;
+  width: 140px;
+  background-color: #9a8dec;
+  border-radius: 32px;
+  position: absolute;
+  top: -55px;
+  right: -35px;
+  rotate: -30deg;
+}
+
+#circle {
+  height: 50px;
+  width: 50px;
+  background-color: #9a8dec;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  right: 125px;
+}
+
+#homepage > div {
+  margin: 64px 0px;
+}
+
+#schedule {
+  padding: 48px 0px 48px 0px;
+  background-color: #9a8dec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#schedule-heading > h4 {
+  color: #1b1b1b;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+#schedule-heading > h1 {
+  font-size: 48px;
+  line-height: 42px;
+  font-family: "Moon Walk";
+  text-align: center;
+}
+
+#schedule-timings {
+  color: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+#schedule-week {
+  margin-top: 8px;
+  margin-right: 16px;
+}
+
+.schedule-dates {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.schedule-dates > .week {
+  margin-right: 16px;
+}
+
+#perks {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#perks-main {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#perks-main > p {
+  width: min(100%, 464px);
+  margin-top: 16px;
+  color: #c3c1ce;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+#perks-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#perks-heading > h4 {
+  color: #9a8dec;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+#perks-heading > h1 {
+  font-size: 48px;
+  line-height: 42px;
+  font-family: "Moon Walk";
+  text-align: center;
+}
+
+#image-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#image-section > img {
+  margin-bottom: 32px;
+}
+
+#domains {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+#domains-heading {
+  margin-bottom: 48px;
+}
+
+#domains-heading > h4 {
+  color: #9a8dec;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+#domains-heading > h1 {
+  font-size: 48px;
+  line-height: 42px;
+  font-family: "Moon Walk";
+  text-align: center;
+}
+
+#domains-folders {
+  background-color: #1a1635;
+  border-radius: 16px;
+}
+
+#folder-nav {
+  height: 86px;
+  padding: 24px 32px;
+  background-color: #362d6d;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.25rem);
+  background-color: #362d6d;
+  padding: 0.25rem 0.25rem;
+  border: 2px solid #000720;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(1, 1, 1, 0.1);
+  font-size: 15px;
+  opacity: 0;
+}
+
+.dropdown-menu > button {
+  padding: 0.5rem;
+  width: 100%;
+  text-align: start;
+  background-color: #362d6d;
+  border: none;
+  border-radius: 4px;
+}
+
+.dropdown-menu > button:hover {
+  background-color: #1a1635;
+}
+
+.dropdown > button:focus + .dropdown-menu {
+  opacity: 1;
+}
+
+#folder-dropdown {
+  height: 38px;
+  width: 160px;
+  background-color: #362d6d;
+  padding: 10px 16px;
+  display: flex;
+  border: 1px solid #dad8ea;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#folder-dropdown:hover {
+  background-color: #1a1635;
+}
+
+#folder-container {
+  padding: 48px 0px;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.folder {
+  width: 120px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.folder > p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #c3c1ce;
+  text-align: center;
+}
+
+#faqs {
+  margin: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#faqs > h1 {
+  font-size: 48px;
+  line-height: 42px;
+  font-family: "Moon Walk";
+  margin-bottom: 8px;
+}
+
+#faqs-container {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqs-question {
+  width: 90%;
+  margin-bottom: 16px;
+  padding: 48px 24px;
+  display: flex;
+  border: 1px solid #dad8ea;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+#faqs > p {
+  color: #4b5563;
+}
+
+#faqs > p > a {
+  color: #9a8dec;
+}
+
+footer {
+  height: 275px;
+  padding: 25px 20px 45px;
+  color: #c8cddc;
+  background-color: #9a8dec;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#footer-main {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-main > img {
+  height: 44px;
+  width: 44px;
+  margin-bottom: 16px;
+}
+
+#footer-main > p {
+  text-align: justify;
+}
+
+#footer-links > a {
+  margin-right: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+@media (min-width: 640px) {
+  #schedule-heading > h4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  #schedule-heading > h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  #schedule-timings {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  #perks-heading > h4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  #perks-heading > h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  #domains-heading > h4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  #domains-heading > h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  #faqs > h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+@media (min-width: 734px) {
+  footer {
+    height: 200px;
+  }
+  #footer-main {
+    flex-direction: row;
+    align-items: center;
+  }
+  #footer-main > p {
+    width: min(100vw, 900px);
+    margin-left: 16px;
+  }
+  #footer-main > img {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1240px) {
+  footer {
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer-main > p {
+    width: min(100vw, 700px);
+  }
+}/*# sourceMappingURL=homepage_lower.css.map */

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="img/Group682.svg" />
+    <link rel="stylesheet" href="./css/homepage_upper.css">
+    <script src="https://kit.fontawesome.com/2af254fe4c.js" crossorigin="anonymous"></script>
+    <title>SKILLS++ Clone</title>
+</head>
+<body>
+    <div class="nav-and-side">
+        <nav class="nav-bar">
+            <img class="logo" alt="logo" src="img/Group682.svg">
+            <ul class="nav-list">
+                <li class="nav-text">
+                    <li class="hideOnMobile"><a href="#">Process</a></li>
+                    <li class="hideOnMobile"><a href="#">Timeline</a></li>
+                    <li class="hideOnMobile"><a href="#">Perks</a></li>
+                    <li class="hideOnMobile"><a href="#">Explore Domains</a></li>
+                    <li class="hideOnMobile"><a href="#">FAQs</a></li>
+                </li>
+            </ul>
+            
+            <button class="register" type="button">
+                Register
+            </button>
+            <li onclick=showSidebar()><a><img class="hideOnPC" src="img/hamburgerMenu.svg" alt="menu"></a></li>
+        </nav>
+        <div class="sidebar-div">
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img alt="Close" src="img/Close.svg"></a></li>
+                <li class="nav-text-sidebar">
+                    <li class="showOnMobile"><a href="#">Process</a></li>
+                    <li class="showOnMobile"><a href="#">Timeline</a></li>
+                    <li class="showOnMobile"><a href="#">Perks</a></li>
+                    <li class="showOnMobile"><a href="#">Explore Domains</a></li>
+                    <li class="showOnMobile"><a href="#">FAQs</a></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section1">
+
+        <img src="img/kid1.svg" alt="bicycle-kid" class="kid1">
+        <div class="text">
+            <span id="sub-heading">2K24</span>
+            <img alt="skillspp" src="img/skillspp.svg">
+            <span class="elevate">
+                Elevate Your Expertise
+            </span>
+            <br>
+            <br>
+            
+            <p class="Boost">
+                Boost your skills with guidance in various tech domains. Gain expert knowledge, hands-on experience, personalized mentoring, and earn a certification. Transform your future, <span class="pulse">
+                    REGISTER NOW!!
+                </span>
+            </p>
+            <br>
+            <button class="explore" type="button">
+                Explore Domains<img src="img/telescope.svg" alt="telescope" class="telescope">
+            </button>
+            <br>
+            <div class="by-Zairza">
+                -by ZAIRZA &nbsp; <img class="Zairza-Logo" src="img/Zairza-Logo.png" alt="Zairza-Logo">
+            </div>
+            <!-- <img alt="register" src="img/Register.svg"> -->
+        </div>
+    </div>
+    <div class="section2">
+        <div class="text">
+            
+            <div class="heading">
+                What is Skills++?
+            </div>
+            <img src="img/Process.svg" alt="Process" class="Process">
+            <br>
+            <br>
+
+            
+                <div class="features">
+                    <div class="body">
+
+                    <span class="discord">
+                        <img src="img/discord.svg" alt="discord">
+                        <span class="get">
+                    Get
+                     <span class="whiteBold">
+                        registered 
+                    </span>
+                    and join your respective domain 
+                    <span class="whiteBold">
+                        discord 
+                    </span>
+                    
+                    channel mentioned after registration
+                    </span>
+    
+                
+                </span>
+                <br>
+            <div class="mentorship">
+                <img src="img/message.svg" alt="message">
+                <div class="one-on-one">
+                    Get one on one 
+                    <span class="whiteBold">
+                        mentorship 
+                    </span>
+                    from your members along with 
+                    <span class="whiteBold">
+                        assignments 
+                    </span>
+                    on start of each week</div>
+                </div>
+                <br>
+                <div class="badges">
+                    <img src="img/trophy.svg" alt="trophy">
+                    <div class="Earn">
+                        Earn 
+                        <span class="whiteBold">
+                            badges
+                        </span>
+                        on successful submission of assignments of 4 weeks and a 
+                        <span class="whiteBold">
+                            certificate 
+                        </span>at the end of 4th week
+                    </div>
+                </div>
+            </div>
+
+            <!-- <img src="img/Chilly1.svg" alt="kid2" class="kid2"> -->
+        </div>
+        
+    </div>
+    <img src="img/Chilly1.svg" alt="kid2" class="kid2">
+    </div>
+</body>
+    <script>
+        function showSidebar(){
+            const sidebar =document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
+</html>
