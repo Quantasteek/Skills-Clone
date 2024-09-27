@@ -4,6 +4,9 @@
 *::after {
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -29,7 +32,13 @@ video {
 body {
   background-color: #000720;
 }
+.nav-list li a:hover{
+  padding: 4px 0px;
+  background-color: black;
+  border-radius: 4px;
+  transition: all;
 
+}
 
 ul {
   margin: 0;
