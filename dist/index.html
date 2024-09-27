@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="Group682.svg" />
-    <link rel="stylesheet" href="./css/homepage_upper.css"/>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/homepage_upper.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/homepage_lower.css" />
     <script
       src="https://kit.fontawesome.com/2af254fe4c.js"
@@ -26,7 +26,9 @@
           <li class="hideOnMobile"><a href="#faqs">FAQs</a></li>
         </ul>
 
-        <button class="register" type="button"><a href="register.html">Register</a></button>
+        <button class="register" type="button" onclick="goToRegister()">
+          <a href="register.html">Register</a>
+        </button>
         <li onclick="showSidebar()" class="hideOnPC">
           <a><img class="hideOnPC" src="img/hamburgerMenu.svg" alt="menu" /></a>
         </li>
@@ -331,6 +333,11 @@
     function hideSidebar() {
       const sidebar = document.querySelector(".sidebar");
       sidebar.style.display = "none";
+    }
+
+    function goToRegister() {
+      // Simulate a mouse click:
+      window.location.href = "register.html";
     }
   </script>
 </html>

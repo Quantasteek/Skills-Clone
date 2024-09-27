@@ -28,10 +28,6 @@ html {
   color-scheme: dark light;
 }
 
-body {
-  min-height: 100vh;
-}
-
 img,
 picture,
 svg,
@@ -44,7 +40,6 @@ body {
   font-family: "Poppins", sans-serif;
   color: rgb(195, 193, 206);
   background-color: rgb(0, 7, 32);
-  height: 100%;
 }
 
 h1 {
@@ -139,7 +134,7 @@ button.nav-bt1 {
   max-width: 1100px;
   width: 90%;
   margin-inline: auto;
-  margin-top: 2.75em;
+  margin-top: 10.75em;
   margin-bottom: 3em;
   justify-content: space-between;
 }

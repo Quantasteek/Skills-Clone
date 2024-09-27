@@ -29,9 +29,9 @@ html {
   color-scheme: dark light;
 }
 
-body {
-  min-height: 100vh;
-}
+// body {
+//   min-height: 100vh;
+// }
 
 img,
 picture,
@@ -374,6 +374,7 @@ header {
 }
 
 #faqs-container {
+  width: min(100%, 800px);
   margin-top: 32px;
   display: flex;
   flex-direction: column;
@@ -390,6 +391,11 @@ header {
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+}
+
+.faqs-question > p {
+  font-size: 1.175rem;
+  line-height: 1.75rem;
 }
 
 #faqs > p {
