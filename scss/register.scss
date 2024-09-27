@@ -32,11 +32,11 @@ $grid-breakpoints: (
   xs: 0,
   sm: 395px,
   lg: 910px,
-  xxl: 1440px
+  xxl: 1440px,
 );
 
 body {
-    background: #000720;
+  background: #000720;
 }
 
 .back {
@@ -57,60 +57,60 @@ body {
 }
 
 //for tabs
-@media (min-width: map-get($map: $grid-breakpoints, $key: lg)){
+@media (min-width: map-get($map: $grid-breakpoints, $key: lg)) {
   .nav_par {
     position: sticky;
     top: 25px;
   }
-  
+
   .nav_par .navbar {
-      margin-bottom: 3vmax;
-      margin-top: 3vmax;
-      margin-left: 5vw;
-      width: 90vw;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      background: red; //#FFFFFF;
-      font-family: Inter, sans-serif;
-      padding: 1px;
-      height: 75px;
-      background-clip: padding-box;
-      border: 0 solid #e5e7eb;
-      border-radius: 0.5rem;
-      background: transparentize($color: #FFFFFF, $amount: 0.8);
-      backdrop-filter: blur(30px);
+    margin-bottom: 3vmax;
+    margin-top: 3vmax;
+    margin-left: 5vw;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: red; //#FFFFFF;
+    font-family: Inter, sans-serif;
+    padding: 1px;
+    height: 75px;
+    background-clip: padding-box;
+    border: 0 solid #e5e7eb;
+    border-radius: 0.5rem;
+    background: transparentize($color: #ffffff, $amount: 0.8);
+    backdrop-filter: blur(30px);
   }
-  
+
   .nav_par .navbar .logo {
-      height: 3rem;
-      margin-left: -3vw;       
+    height: 3rem;
+    margin-left: -3vw;
   }
-  
+
   .reg_btn {
-      padding: 0.5rem 1rem;
-      background-color: #EFF6FF;
-      color: #000000;
-      font-weight: 500;
-      text-decoration: none;
-      border-radius: 0.7rem;
-      cursor: pointer;
-      text-align: center;
-      font-size: 0.95rem;
-      margin-right: -2.5vw;
-      
+    padding: 0.5rem 1rem;
+    background-color: #eff6ff;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-right: -2.5vw;
   }
-  
+
   .nav_par .navbar {
-      font-size: 2rem;
-      margin-right: -40px;
-      cursor:pointer;
+    font-size: 2rem;
+    margin-right: -40px;
+    cursor: pointer;
   }
-  
-  .navbar > .menu, .dropdown-content {
+
+  .navbar > .menu,
+  .dropdown-content {
     display: none;
   }
-  
+
   .navbar > ul {
     list-style: none;
     display: flex;
@@ -118,7 +118,7 @@ body {
     font-weight: 600;
     gap: 2.5vw;
   }
-  
+
   .navbar > ul > li:hover {
     background-color: #000000;
     border-radius: 5px;
@@ -140,14 +140,14 @@ body {
     margin-top: 10px;
   }
   .form-sec .log-in .reg-al {
-    color: #C3C1CE;
+    color: #c3c1ce;
   }
   .lady-run {
     margin: 60px auto;
   }
   .form input {
     margin: auto;
-    background-color: #1A1635;
+    background-color: #1a1635;
     border: none;
     border-radius: 3px;
     padding-left: 10px;
@@ -159,7 +159,7 @@ body {
     font-size: 1rem;
   }
   .form input:focus {
-    border: #EFF6FF 1px solid;
+    border: #eff6ff 1px solid;
   }
   .full-inputs {
     display: flex;
@@ -182,7 +182,7 @@ body {
   }
   select {
     width: 29vw;
-    background-color: #1A1635;
+    background-color: #1a1635;
     margin-top: 12px;
     border: none;
     height: 50px;
@@ -192,7 +192,8 @@ body {
     padding-left: 10px;
     border-radius: 3px;
   }
-  .half-inputs .grp-2, .grp-3 {
+  .half-inputs .grp-2,
+  .grp-3 {
     margin: auto;
     width: 60vw;
     display: flex;
@@ -215,14 +216,14 @@ body {
   }
   .buttons .back {
     background: transparent;
-    border: #EFF6FF 2px solid;
+    border: #eff6ff 2px solid;
     width: 90px;
     padding: 2px;
     border-radius: 8px;
     font-size: 0.8rem;
   }
   .buttons .create {
-    background: #EFF6FF;
+    background: #eff6ff;
     border: 2px solid;
     width: 160px;
     padding: 2px;
@@ -232,7 +233,7 @@ body {
   }
   .footer {
     margin-top: 120px;
-    background-color: #9A8DEC;
+    background-color: #9a8dec;
     width: 100vw;
     height: 150px;
     padding-top: 30px;
@@ -263,13 +264,13 @@ body {
 }
 
 //for pc
-@media (min-width: map-get($map: $grid-breakpoints, $key: xxl)) { 
-.nav_par {
-  position: sticky;
-  top: 25px;
-}
+@media (min-width: map-get($map: $grid-breakpoints, $key: xxl)) {
+  .nav_par {
+    position: sticky;
+    top: 25px;
+  }
 
-.nav_par .navbar {
+  .nav_par .navbar {
     margin-bottom: 3vmax;
     margin-top: 3vmax;
     margin-left: 5vw;
@@ -284,18 +285,18 @@ body {
     background-clip: padding-box;
     border: 0 solid #e5e7eb;
     border-radius: 0.5rem;
-    background: transparentize($color: #FFFFFF, $amount: 0.8);
+    background: transparentize($color: #ffffff, $amount: 0.8);
     backdrop-filter: blur(30px);
-}
+  }
 
-.nav_par .navbar .logo {
+  .nav_par .navbar .logo {
     height: 3rem;
-    margin-left: -4vw;       
-}
+    margin-left: -4vw;
+  }
 
-.reg_btn {
+  .reg_btn {
     padding: 0.5rem 1rem;
-    background-color: #EFF6FF;
+    background-color: #eff6ff;
     color: #000000;
     font-weight: 500;
     text-decoration: none;
@@ -304,34 +305,34 @@ body {
     text-align: center;
     font-size: 0.95rem;
     margin-right: -5vw;
-    
-}
+  }
 
-.nav_par .navbar {
+  .nav_par .navbar {
     font-size: 2rem;
     margin-right: -40px;
-    cursor:pointer;
-}
+    cursor: pointer;
+  }
 
-.navbar > .menu, .dropdown-content {
-  display: none;
-}
+  .navbar > .menu,
+  .dropdown-content {
+    display: none;
+  }
 
-.navbar > ul {
-  list-style: none;
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: 600;
-  gap: 3vw;
-}
+  .navbar > ul {
+    list-style: none;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 600;
+    gap: 3vw;
+  }
 
-.navbar > ul > li:hover {
-  background-color: #000000;
-  border-radius: 5px;
-}
-.join-img-mob {
-  display: none;
-}
+  .navbar > ul > li:hover {
+    background-color: #000000;
+    border-radius: 5px;
+  }
+  .join-img-mob {
+    display: none;
+  }
   .join-img-pc {
     height: 103px;
     margin-left: 10vw;
@@ -344,7 +345,7 @@ body {
     text-align: left;
   }
   .form-sec .log-in .reg-al {
-    color: #C3C1CE;
+    color: #c3c1ce;
   }
 
   .lady-run {
@@ -362,7 +363,7 @@ body {
   .form input {
     margin-left: 10vw;
     margin: auto;
-    background-color: #1A1635;
+    background-color: #1a1635;
     border: none;
     border-radius: 3px;
     padding-left: 10px;
@@ -374,7 +375,7 @@ body {
     font-size: 1rem;
   }
   .form input:focus {
-    border: #EFF6FF 1px solid;
+    border: #eff6ff 1px solid;
   }
   .full-inputs input {
     width: 500px;
@@ -392,7 +393,7 @@ body {
   }
   select {
     width: 242px;
-    background-color: #1A1635;
+    background-color: #1a1635;
     margin-top: 12px;
     border: none;
     height: 50px;
@@ -402,7 +403,8 @@ body {
     padding-left: 10px;
     border-radius: 3px;
   }
-  .half-inputs .grp-2, .grp-3 {
+  .half-inputs .grp-2,
+  .grp-3 {
     margin: auto 10vw;
     width: 500px;
     display: flex;
@@ -425,14 +427,14 @@ body {
   }
   .buttons .back {
     background: transparent;
-    border: #EFF6FF 2px solid;
+    border: #eff6ff 2px solid;
     width: 90px;
     padding: 2px;
     border-radius: 8px;
     font-size: 0.8rem;
   }
   .buttons .create {
-    background: #EFF6FF;
+    background: #eff6ff;
     border: 2px solid;
     width: 160px;
     padding: 2px;
@@ -442,7 +444,7 @@ body {
   }
   .footer {
     margin-top: 120px;
-    background-color: #9A8DEC;
+    background-color: #9a8dec;
     width: 100vw;
     height: 150px;
     padding-top: 30px;
@@ -474,215 +476,214 @@ body {
 
 //for mobile
 @media (max-width: map-get($map: $grid-breakpoints, $key: lg)) {
-    .nav_par {
-      position: sticky;
-      top: 25px;
-    }
-    .nav_par .navbar {
-        margin-bottom: 3vmax;
-        margin-top: 3vmax;
-        margin-left: 3vw;
-        margin-right: 3vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        background: red; //#FFFFFF;
-        font-family: Inter, sans-serif;
-        padding: 1px;
-        height: 60px;
-        background-clip: padding-box;
-        border: 0 solid #e5e7eb;
-        border-radius: 0.5rem;
-        background: transparentize($color: #FFFFFF, $amount: 0.8);
-        backdrop-filter: blur(30px);
-    }
-    .nav_par .navbar .logo {
-        height: 2rem;
-        margin-left: -40px;       
-    }
-    .reg_btn {
-        padding: 0.5rem 1rem;
-        background-color: #EFF6FF;
-        color: #000000;
-        font-weight: 500;
-        text-decoration: none;
-        border-radius: 0.7rem;
-        cursor: pointer;
-        text-align: center;
-        font-size: 0.95rem;
-        margin-right: -100px;
-        
-    }
-    .nav_par .navbar .menu {
-        font-size: 2rem;
-        margin-right: -40px;
-        cursor:pointer;
-    }
-    .side-menu {
-      display: none;
-    }
-    .dropdown-content {
-      margin-left: 3vw;
-      margin-right: 3vw;
-      background: transparentize($color: #FFFFFF, $amount: 0.8);
-      backdrop-filter: blur(30px);
-      border: 0 solid #e5e7eb;
-      border-radius: 0.5rem;
-      padding: 2px;
-      margin-top: -19px;
-      display: none;
-    }
-    .dropdown-content a:first-of-type {
-      margin-top: 15px;
-    }
-    .dropdown-content a {
-      display: block;
-      margin-bottom: 15px;
-      text-decoration: none;
-      color: #FFFFFF;
-      margin-left: 3vw;
-      font-weight: 500;
-      cursor: pointer;
-    }
-    .menu:hover .dropdown-content {
-      display: block;
-    }
-    .form-sec {
-      margin-top: 20vh;
-    }
-    .join-img-pc {
-      display: none;
-    }
-    .form-sec .join-img-mob {
-      height: 103px;
-      margin: auto;
-      margin-top: 55px;
-    }
-    .form-sec .log-in {
-      text-align: center;
-      margin-top: 10px;
-    }
-    .form-sec .log-in .reg-al {
-      color: #C3C1CE;
-    }
-    .lady-run {
-      margin: 50px auto;
-      zoom: 0.8;
-    }
-    .lady {
-      display: none;
-    }
-    .form input {
-      margin: auto;
-      background-color: #1A1635;
-      border: none;
-      border-radius: 3px;
-      padding-left: 10px;
-      height: 50px;
-      margin-top: 12px;
-    }
-    .form input::placeholder {
-      font-weight: 500;
-      font-size: 1rem;
-    }
-    .form input:focus {
-      border: #EFF6FF 1px solid;
-    }
-    .full-inputs {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .full-inputs input {
-      width: 350px;
-      margin: 8px auto;
-      display: block;
-    }
-    .half-inputs input {
-      width: 168px;
-    }
-    .half-inputs .grp-1 {
-      width: 350px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-    }
-    select {
-      width: 168px;
-      background-color: #1A1635;
-      margin-top: 12px;
-      border: none;
-      height: 50px;
-      color: rgb(197, 197, 197);
-      font-size: 1.001rem;
-      font-weight: 300;
-      padding-left: 10px;
-      border-radius: 3px;
-    }
-    .half-inputs .grp-2, .grp-3 {
-      margin: auto;
-      width: 348px;
-      display: flex;
-      justify-content: space-between;
-    }
-    .form .form-text {
-      width: 350px;
-      margin: 20px auto;
-      color: lightgrey;
-      font-size: 0.95rem;
-    }
-    .form .form-text a {
-      color: darkgray;
-    }
-    .buttons {
-      width: 350px;
-      margin: 20px auto;
-      display: flex;
-      justify-content: space-between;
-    }
-    .buttons .back {
-      background: transparent;
-      border: #EFF6FF 2px solid;
-      width: 90px;
-      padding: 2px;
-      border-radius: 8px;
-      font-size: 0.8rem;
-    }
-    .buttons .create {
-      background: #EFF6FF;
-      border: 2px solid;
-      width: 160px;
-      padding: 2px;
-      border-radius: 8px;
-      font-size: 0.8rem;
-      color: #000720;
-    }
-    .footer {
-      margin-top: 120px;
-      background-color: #9A8DEC;
-      width: 100vw;
-      height: 250px;
-      padding-top: 30px;
-    }
-    .foot-logo {
-      zoom: 0.75;
-      margin: 5vw;
-    }
-    .foot-text {
-      width: 70vw;
-      margin: 20px 5vw;
-      font-weight: 100;
-    }
-    .foot-links a {
-      color: #e5e7eb;
-    }
-    .foot-links {
-      margin-top: 30px;
-      margin-left: 3vw;
-      width: 300px;
-      list-style: none;
-      display: flex;
-      justify-content: space-around;
-    }
+  .nav_par {
+    position: sticky;
+    top: 25px;
+  }
+  .nav_par .navbar {
+    margin-bottom: 3vmax;
+    margin-top: 3vmax;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: red; //#FFFFFF;
+    font-family: Inter, sans-serif;
+    padding: 1px;
+    height: 60px;
+    background-clip: padding-box;
+    border: 0 solid #e5e7eb;
+    border-radius: 0.5rem;
+    background: transparentize($color: #ffffff, $amount: 0.8);
+    backdrop-filter: blur(30px);
+  }
+  .nav_par .navbar .logo {
+    height: 2rem;
+    margin-left: -40px;
+  }
+  .reg_btn {
+    padding: 0.5rem 1rem;
+    background-color: #eff6ff;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-right: -100px;
+  }
+  .nav_par .navbar .menu {
+    font-size: 2rem;
+    margin-right: -40px;
+    cursor: pointer;
+  }
+  .side-menu {
+    display: none;
+  }
+  .dropdown-content {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    background: transparentize($color: #ffffff, $amount: 0.8);
+    backdrop-filter: blur(30px);
+    border: 0 solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 2px;
+    margin-top: -19px;
+    display: none;
+  }
+  .dropdown-content a:first-of-type {
+    margin-top: 15px;
+  }
+  .dropdown-content a {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 3vw;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .menu:hover .dropdown-content {
+    display: block;
+  }
+  .form-sec {
+    margin-top: 20vh;
+  }
+  .join-img-pc {
+    display: none;
+  }
+  .form-sec .join-img-mob {
+    height: 103px;
+    margin: auto;
+    margin-top: 55px;
+  }
+  .form-sec .log-in {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .form-sec .log-in .reg-al {
+    color: #c3c1ce;
+  }
+  .lady-run {
+    margin: 50px auto;
+    zoom: 0.8;
+  }
+  .lady {
+    display: none;
+  }
+  .form input {
+    margin: auto;
+    background-color: #1a1635;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    height: 50px;
+    margin-top: 12px;
+  }
+  .form input::placeholder {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .form input:focus {
+    border: #eff6ff 1px solid;
+  }
+  .full-inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .full-inputs input {
+    width: 350px;
+    margin: 8px auto;
+    display: block;
+  }
+  .half-inputs input {
+    width: 168px;
+  }
+  .half-inputs .grp-1 {
+    width: 350px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  select {
+    width: 168px;
+    background-color: #1a1635;
+    margin-top: 12px;
+    border: none;
+    height: 50px;
+    color: rgb(197, 197, 197);
+    font-size: 1.001rem;
+    font-weight: 300;
+    padding-left: 10px;
+    border-radius: 3px;
+  }
+  .half-inputs .grp-2,
+  .grp-3 {
+    margin: auto;
+    width: 348px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form .form-text {
+    width: 350px;
+    margin: 20px auto;
+    color: lightgrey;
+    font-size: 0.95rem;
+  }
+  .form .form-text a {
+    color: darkgray;
+  }
+  .buttons {
+    width: 350px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .buttons .back {
+    background: transparent;
+    border: #eff6ff 2px solid;
+    width: 90px;
+    padding: 2px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+  }
+  .buttons .create {
+    background: #eff6ff;
+    border: 2px solid;
+    width: 160px;
+    padding: 2px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    color: #000720;
+  }
+  .footer {
+    margin-top: 120px;
+    background-color: #9a8dec;
+    width: 100vw;
+    height: 250px;
+    padding-top: 30px;
+  }
+  .foot-logo {
+    zoom: 0.75;
+    margin: 5vw;
+  }
+  .foot-text {
+    width: 70vw;
+    margin: 20px 5vw;
+    font-weight: 100;
+  }
+  .foot-links a {
+    color: #e5e7eb;
+  }
+  .foot-links {
+    margin-top: 30px;
+    margin-left: 3vw;
+    width: 300px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
 }
-

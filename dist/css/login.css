@@ -298,7 +298,9 @@ footer {
     padding: 20px;
     height: auto;
   }
-  .login-form h1, .login-form h2, .login-form p {
+  .login-form h1,
+  .login-form h2,
+  .login-form p {
     text-align: center;
     margin-left: 0;
   }
@@ -317,7 +319,8 @@ footer {
     flex-direction: column;
     margin-top: 20px;
   }
-  .back-btn, .login-btn {
+  .back-btn,
+  .login-btn {
     width: 100%;
     padding: 12px;
     margin: 5px 0;

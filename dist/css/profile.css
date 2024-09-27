@@ -178,11 +178,13 @@ button.nav-bt1 {
   justify-content: space-between;
 }
 
-.profile h2, .profile1 h2 {
+.profile h2,
+.profile1 h2 {
   color: rgb(154, 141, 236);
 }
 
-.profile h1, .profile1 h1 {
+.profile h1,
+.profile1 h1 {
   font-family: "Moon Walk";
   color: white;
   font-weight: 300;
@@ -217,11 +219,13 @@ p.small {
   font-size: small;
 }
 
-.badge2 h2, .badge1 h2 {
+.badge2 h2,
+.badge1 h2 {
   font-weight: 600;
 }
 
-.badge1, .badge2 {
+.badge1,
+.badge2 {
   width: 47%;
   justify-content: space-between;
 }
@@ -236,7 +240,8 @@ p.small {
   padding-left: 1em;
 }
 
-.badge1, .badge2 {
+.badge1,
+.badge2 {
   border-radius: 5%;
   overflow: hidden;
 }
@@ -296,8 +301,9 @@ p.small {
     max-width: 100%; /* Make the image responsive */
   }
   /* Adjust any other layout inside header-right */
-  .detail, .badges {
-    width: 100%;
+  .detail,
+  .badges {
+    width: 100%; /* Ensure content in header-right follows the profile */
   }
   .profile {
     display: none;
@@ -310,7 +316,8 @@ p.small {
   .badge1 {
     margin-bottom: 1em;
   }
-  .badge1, .badge2 {
+  .badge1,
+  .badge2 {
     width: 100%;
   }
   .badges {
